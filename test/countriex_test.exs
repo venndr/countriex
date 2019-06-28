@@ -10,6 +10,14 @@ defmodule CountriexTest do
     end
   end
 
+  describe "all_sort_by_alphabet/0" do
+    test "returns all countries sorted alphabetically" do
+      countries = Countriex.all_sort_by_alphabet
+
+      assert List.first(countries).name == "Afghanistan"
+    end
+  end
+
   describe "get_by/2" do
     test "returns the first country to match the given criteria" do
       country = Countriex.get_by(:name, "Jamaica")
