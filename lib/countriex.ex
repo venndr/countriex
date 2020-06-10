@@ -11,6 +11,11 @@ defmodule Countriex do
   def all, do: Data.countries
 
   @doc """
+  Returns all country data sorted by its name
+  """
+  def all_sort_by_alphabet, do: Enum.sort_by(all(), fn(c) -> c.name end)
+
+  @doc """
   Returns the first matching country with the given criteria, or `nil` if a country with that data does not exist.
 
   ## Examples

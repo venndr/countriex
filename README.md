@@ -1,8 +1,8 @@
 # Countriex
 
 [![Build Status](https://travis-ci.org/navinpeiris/countriex.svg?branch=master)](https://travis-ci.org/navinpeiris/countriex)
-[![Hex version](https://img.shields.io/hexpm/v/countriex.svg "Hex version")](https://hex.pm/packages/countriex)
-[![Hex downloads](https://img.shields.io/hexpm/dt/countriex.svg "Hex downloads")](https://hex.pm/packages/countriex)
+[![Hex version](https://img.shields.io/hexpm/v/countriex.svg 'Hex version')](https://hex.pm/packages/countriex)
+[![Hex downloads](https://img.shields.io/hexpm/dt/countriex.svg 'Hex downloads')](https://hex.pm/packages/countriex)
 [![Deps Status](https://beta.hexfaktor.org/badge/all/github/navinpeiris/countriex.svg)](https://beta.hexfaktor.org/github/navinpeiris/countriex)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
@@ -14,7 +14,7 @@ Add `countriex` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:countriex, "~> 1.0.1", github: "normancapule/countriex"}]
+  [{:countriex, "~> 1.0.2", github: "normancapule/countriex"}]
 end
 ```
 
@@ -24,6 +24,12 @@ To get all country information:
 
 ```elixir
 Countriex.all
+```
+
+To get all countries sorted alphabetically:
+
+```elixir
+Countriex.all_sort_by_alphabet
 ```
 
 To get all state information:
