@@ -40,7 +40,7 @@ defmodule Countriex.Mixfile do
     [
       {:earmark, "~> 1.0", only: :dev},
       {:ex_doc, "~> 0.14", only: :dev},
-      {:httpoison, "~> 0.10", only: :dev},
+      {:httpoison, "~> 1.8", only: :dev},
       {:poison, "~> 3.0", only: :dev},
       {:yaml_elixir, "~> 1.1", only: :dev},
       {:morphix, "~> 0.8.0"},

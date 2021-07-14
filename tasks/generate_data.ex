@@ -7,49 +7,55 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   def run(_) do
     countries =
       countries_from_url()
-      |> Map.values
+      |> Map.values()
       |> parse(%Country{})
       |> sort
 
     states = states_from_url(countries)
+
     %{countries: countries, states: states}
     |> generate_file_content
     |> write_to_file
   end
 
   defp countries_from_url do
-    HTTPoison.start
+    HTTPoison.start()
 
     @countries_json_url
-    |> HTTPoison.get!
+    |> HTTPoison.get!()
     |> Map.get(:body)
     |> Poison.decode!(keys: :atoms)
   end
 
   defp states_from_url(countries) do
     Application.ensure_all_started(:yaml_elixir)
+
     Enum.flat_map(countries, fn country ->
       response = HTTPoison.get!(@states_json_url <> "#{country.alpha2}.yaml")
 
       case response.status_code do
         200 ->
           Map.get(response, :body)
-          |> YamlElixir.read_from_string
+          |> YamlElixir.read_from_string()
           |> assign_state_code
           |> string_to_atom
           |> Enum.filter(&Map.has_key?(&1, :name))
           |> parse(%State{})
           |> Enum.map(&Map.merge(&1, %{country_alpha3: country.alpha3}))
-        404 -> []
+
+        404 ->
+          []
       end
     end)
   end
 
-  defp assign_state_code(data) when is_map(data) do
+  defp assign_state_code(data) do
+    {:ok, data} = data
     for {state_code, value} <- data, do: Map.merge(value, %{code: state_code})
   end
 
   defp string_to_atom(data) when is_list(data), do: Enum.map(data, &string_to_atom(&1))
+
   defp string_to_atom(data) when is_map(data) do
     {:ok, atomized_data} = Morphix.atomorphiform(data)
     atomized_data
@@ -58,6 +64,7 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   defp parse(data, type) when is_list(data) do
     Enum.map(data, &parse(&1, type))
   end
+
   defp parse(data, type) when is_map(data) do
     geo =
       case Map.get(data, :geo, %{}) do
@@ -71,26 +78,28 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   end
 
   defp parse_geo(geo_data, _type) when geo_data == %{}, do: %Geo{}
+
   defp parse_geo(geo_data, %Country{}) do
     %Geo{
-      latitude:       geo_data.latitude |> to_float,
-      latitude_dec:   geo_data.latitude_dec |> to_float,
-      longitude:      geo_data.longitude |> to_float,
-      longitude_dec:  geo_data.longitude_dec |> to_float,
-      max_latitude:   geo_data.max_latitude |> to_float,
-      max_longitude:  geo_data.max_longitude |> to_float,
-      min_latitude:   geo_data.min_latitude |> to_float,
-      min_longitude:  geo_data.min_longitude |> to_float,
+      latitude: geo_data.latitude |> to_float,
+      latitude_dec: geo_data.latitude_dec |> to_float,
+      longitude: geo_data.longitude |> to_float,
+      longitude_dec: geo_data.longitude_dec |> to_float,
+      max_latitude: geo_data.max_latitude |> to_float,
+      max_longitude: geo_data.max_longitude |> to_float,
+      min_latitude: geo_data.min_latitude |> to_float,
+      min_longitude: geo_data.min_longitude |> to_float
     }
   end
+
   defp parse_geo(geo_data, %State{}) do
     %Geo{
-      latitude:       geo_data.latitude |> to_float,
-      longitude:      geo_data.longitude |> to_float,
-      max_latitude:   geo_data.max_latitude |> to_float,
-      max_longitude:  geo_data.max_longitude |> to_float,
-      min_latitude:   geo_data.min_latitude |> to_float,
-      min_longitude:  geo_data.min_longitude |> to_float,
+      latitude: geo_data.latitude |> to_float,
+      longitude: geo_data.longitude |> to_float,
+      max_latitude: geo_data |> Map.get(:max_latitude) |> to_float,
+      max_longitude: geo_data |> Map.get(:max_longitude) |> to_float,
+      min_latitude: geo_data |> Map.get(:min_latitude) |> to_float,
+      min_longitude: geo_data |> Map.get(:min_longitude) |> to_float
     }
   end
 
@@ -121,6 +130,7 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   defp to_float(nil), do: nil
 
   defp to_float(val) when is_float(val), do: val
+
   defp to_float(str) do
     {result, _} = Float.parse("#{str}")
     result
