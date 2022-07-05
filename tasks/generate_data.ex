@@ -35,7 +35,8 @@ defmodule Mix.Tasks.Countriex.GenerateData do
 
       case response.status_code do
         200 ->
-          Map.get(response, :body)
+          response
+          |> Map.get(:body)
           |> YamlElixir.read_from_string()
           |> assign_state_code
           |> string_to_atom
@@ -61,9 +62,7 @@ defmodule Mix.Tasks.Countriex.GenerateData do
     atomized_data
   end
 
-  defp parse(data, type) when is_list(data) do
-    Enum.map(data, &parse(&1, type))
-  end
+  defp parse(data, type) when is_list(data), do: Enum.map(data, &parse(&1, type))
 
   defp parse(data, type) when is_map(data) do
     geo =
@@ -79,21 +78,18 @@ defmodule Mix.Tasks.Countriex.GenerateData do
 
   defp parse_geo(geo_data, _type) when geo_data == %{}, do: %Geo{}
 
-  defp parse_geo(geo_data, %Country{}) do
-    %Geo{
+  defp parse_geo(geo_data, %Country{}),
+    do: %Geo{
       latitude: geo_data.latitude |> to_float,
-      latitude_dec: geo_data.latitude_dec |> to_float,
       longitude: geo_data.longitude |> to_float,
-      longitude_dec: geo_data.longitude_dec |> to_float,
       max_latitude: geo_data.max_latitude |> to_float,
       max_longitude: geo_data.max_longitude |> to_float,
       min_latitude: geo_data.min_latitude |> to_float,
       min_longitude: geo_data.min_longitude |> to_float
     }
-  end
 
-  defp parse_geo(geo_data, %State{}) do
-    %Geo{
+  defp parse_geo(geo_data, %State{}),
+    do: %Geo{
       latitude: geo_data.latitude |> to_float,
       longitude: geo_data.longitude |> to_float,
       max_latitude: geo_data |> Map.get(:max_latitude) |> to_float,
@@ -101,9 +97,8 @@ defmodule Mix.Tasks.Countriex.GenerateData do
       min_latitude: geo_data |> Map.get(:min_latitude) |> to_float,
       min_longitude: geo_data |> Map.get(:min_longitude) |> to_float
     }
-  end
 
-  defp sort(countries), do: countries |> Enum.sort_by(&Map.get(&1, :alpha2))
+  defp sort(countries), do: Enum.sort_by(countries, &Map.get(&1, :alpha2))
 
   defp generate_file_content(%{countries: countries, states: states}) do
     """
