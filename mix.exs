@@ -27,9 +27,9 @@ defmodule Countriex.Mixfile do
   defp package do
     [
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
-      maintainers: ["Navin Peiris"],
+      maintainers: ["Music Glue"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/navinpeiris/countriex"}
+      links: %{"GitHub" => "https://github.com/venndr/countriex"}
     ]
   end
 
