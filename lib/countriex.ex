@@ -62,7 +62,7 @@ defmodule Countriex do
 
       iex> c = Countriex.get_by(:alpha2, "US")
       iex> length Countriex.all_states(c)
-      60
+      57
   """
   def all_states(%Countriex.Country{} = country) do
     Enum.filter(Data.states(), fn state -> country.alpha3 == state.country_alpha3 end)
