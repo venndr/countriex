@@ -8,12 +8,12 @@ defmodule Countriex do
   @doc """
   Returns all country data
   """
-  def all, do: Data.countries
+  def all, do: Data.countries()
 
   @doc """
   Returns all country data sorted by its name
   """
-  def all_sort_by_alphabet, do: Enum.sort_by(all(), fn(c) -> c.name end)
+  def all_sort_by_alphabet, do: Enum.sort_by(all(), fn c -> c.name end)
 
   @doc """
   Returns the first matching country with the given criteria, or `nil` if a country with that data does not exist.
@@ -30,7 +30,8 @@ defmodule Countriex do
       iex> Countriex.get_by(:foo, "XX")
       nil
   """
-  def get_by(field, value), do: all() |> Enum.find(fn country -> matches?(country, field, value) end)
+  def get_by(field, value),
+    do: all() |> Enum.find(fn country -> matches?(country, field, value) end)
 
   @doc """
   Returns all countries matching the given criteria, or `[]` if the criteria does not match any countries
@@ -46,13 +47,13 @@ defmodule Countriex do
       iex> Countriex.filter(:region, "foo")
       []
   """
-  def filter(field, value), do: all() |> Enum.filter(fn country -> matches?(country, field, value) end)
-
+  def filter(field, value),
+    do: all() |> Enum.filter(fn country -> matches?(country, field, value) end)
 
   @doc """
   Returns all state data
   """
-  def all_states, do: Data.states
+  def all_states, do: Data.states()
 
   @doc """
   Returns all state data with the given country struct.
@@ -64,7 +65,7 @@ defmodule Countriex do
       60
   """
   def all_states(%Countriex.Country{} = country) do
-    Enum.filter(Data.states, fn state -> country.alpha3 == state.country_alpha3 end)
+    Enum.filter(Data.states(), fn state -> country.alpha3 == state.country_alpha3 end)
   end
 
   defp matches?(country, field, value), do: Map.get(country, field) == value
