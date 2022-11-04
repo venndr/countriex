@@ -7,7 +7,6 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   def run(_) do
     countries =
       countries_from_url()
-      |> Map.values()
       |> parse(%Country{})
       |> sort
 
@@ -25,6 +24,9 @@ defmodule Mix.Tasks.Countriex.GenerateData do
     |> HTTPoison.get!()
     |> Map.get(:body)
     |> Poison.decode!(keys: :atoms)
+    |> Enum.map(fn {_, %{iso_short_name: name} = country} ->
+      Map.put(country, :name, name)
+    end)
   end
 
   defp states_from_url(countries) do
