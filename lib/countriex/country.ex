@@ -6,8 +6,8 @@ defmodule Countriex.Country do
 
   @type t :: %__MODULE__{
           address_format: String.t(),
-          alpha2: <<_::2>>,
-          alpha3: <<_::3>>,
+          alpha2: binary(),
+          alpha3: binary(),
           alt_currency: optional_string,
           continent: String.t(),
           country_code: String.t(),
