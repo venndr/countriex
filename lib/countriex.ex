@@ -64,9 +64,8 @@ defmodule Countriex do
       iex> length Countriex.all_states(c)
       57
   """
-  def all_states(%Countriex.Country{} = country) do
-    Enum.filter(Data.states(), fn state -> country.alpha3 == state.country_alpha3 end)
-  end
+  def all_states(%Countriex.Country{} = country),
+    do: Enum.filter(Data.states(), fn state -> country.alpha3 == state.country_alpha3 end)
 
   defp matches?(country, field, value), do: Map.get(country, field) == value
 end
