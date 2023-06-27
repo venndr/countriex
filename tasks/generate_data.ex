@@ -3,11 +3,12 @@ defmodule Mix.Tasks.Countriex.GenerateData do
 
   @countries_json_url "https://raw.githubusercontent.com/hexorx/countries/master/lib/countries/cache/countries.json"
   @states_json_url "https://raw.githubusercontent.com/hexorx/countries/master/lib/countries/data/subdivisions/"
+  @country_keys Country.__struct__() |> Map.keys()
 
   def run(_) do
     countries =
       countries_from_url()
-      |> update_cache()
+      |> tap(&update_cache/1)
       |> parse_countries_json()
       |> parse(%Country{})
       |> sort
@@ -20,11 +21,7 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   end
 
   @countries_cache "cache/countries.json"
-  defp update_cache(countries) do
-    File.write!(@countries_cache, countries)
-
-    countries
-  end
+  defp update_cache(countries), do: File.write!(@countries_cache, countries)
 
   defp countries_from_url do
     HTTPoison.start()
