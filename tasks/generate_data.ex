@@ -7,6 +7,8 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   def run(_) do
     countries =
       countries_from_url()
+      |> update_cache()
+      |> parse_countries_json()
       |> parse(%Country{})
       |> sort
 
@@ -17,12 +19,23 @@ defmodule Mix.Tasks.Countriex.GenerateData do
     |> write_to_file
   end
 
+  @countries_cache "cache/countries.json"
+  defp update_cache(countries) do
+    File.write!(@countries_cache, countries)
+
+    countries
+  end
+
   defp countries_from_url do
     HTTPoison.start()
 
     @countries_json_url
     |> HTTPoison.get!()
     |> Map.get(:body)
+  end
+
+  defp parse_countries_json(countries) do
+    countries
     |> Poison.decode!(keys: :atoms)
     |> Enum.map(fn {_, %{iso_short_name: name} = country} ->
       Map.put(country, :name, name)
