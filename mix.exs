@@ -16,13 +16,22 @@ defmodule Countriex.Mixfile do
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      docs: [extras: ["README.md"]]
+      docs: [extras: ["README.md"]],
+      aliases: aliases()
     ]
   end
 
   def application do
     [applications: [:logger]]
   end
+
+  defp aliases,
+    do: [
+      update: [
+        "countriex.generate_data",
+        "format lib/countriex/data.ex"
+      ]
+    ]
 
   defp package do
     [
