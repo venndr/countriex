@@ -146,11 +146,13 @@ defmodule Mix.Tasks.Countriex.GenerateData do
     result
   end
 
-  defp format(data) do
-    data
-    |> inspect(pretty: true, limit: 10_000, width: 0, charlists: :as_lists)
-    |> String.split("\n")
-    |> Enum.map(fn line -> "    " <> line end)
-    |> Enum.join("\n")
-  end
+  defp format(data),
+    do:
+      inspect(data,
+        pretty: true,
+        limit: 10_000,
+        width: 0,
+        charlists: :as_lists,
+        custom_options: [sort_maps: true]
+      )
 end
