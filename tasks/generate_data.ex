@@ -35,7 +35,11 @@ defmodule Mix.Tasks.Countriex.GenerateData do
     countries
     |> Poison.decode!(keys: :atoms)
     |> Enum.map(fn {_, %{iso_short_name: name} = country} ->
-      Map.put(country, :name, name)
+      country
+      |> Map.take(@country_keys)
+      |> Map.put(:name, name)
+      |> Map.put(:__struct__, Country)
+      |> struct()
     end)
   end
 
@@ -150,6 +154,7 @@ defmodule Mix.Tasks.Countriex.GenerateData do
         limit: 10_000,
         width: 0,
         charlists: :as_lists,
-        custom_options: [sort_maps: true]
+        custom_options: [sort_maps: true],
+        structs: true
       )
 end
