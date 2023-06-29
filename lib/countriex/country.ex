@@ -1,4 +1,6 @@
 defmodule Countriex.Country do
+  @default_locale "en"
+
   @type vat_rate :: nil | integer() | list(integer())
 
   @type optional_string :: String.t() | nil
@@ -9,6 +11,7 @@ defmodule Countriex.Country do
           alpha2: binary(),
           alpha3: binary(),
           alt_currency: optional_string,
+          common_name: map() | nil,
           continent: String.t(),
           country_code: String.t(),
           currency_code: String.t(),
@@ -51,6 +54,7 @@ defmodule Countriex.Country do
     :address_format,
     :alpha2,
     :alpha3,
+    :common_name,
     :continent,
     :country_code,
     :currency_code,
@@ -82,4 +86,34 @@ defmodule Countriex.Country do
     :eu_member,
     :world_region
   ]
+
+  @doc """
+  Returns true if the country has a common name for the locale
+  """
+  @spec common_name?(__MODULE__.t(), locale :: atom() | String.t()) :: boolean()
+
+  def common_name?(country, locale \\ @default_locale)
+
+  def common_name?(%__MODULE__{common_name: nil}, _), do: false
+
+  def common_name?(%__MODULE__{common_name: cn}, locale) when is_atom(locale),
+    do: Map.has_key?(cn, locale)
+
+  def common_name?(m, locale) when is_binary(locale),
+    do: common_name?(m, String.to_atom(locale))
+
+  @doc """
+  Returns the country's common name for the locale or nil
+  """
+  @spec common_name(__MODULE__.t(), locale :: atom() | String.t()) :: String.t() | nil
+
+  def common_name(country, locale \\ @default_locale)
+
+  def common_name(%__MODULE__{common_name: nil}, _), do: nil
+
+  def common_name(%__MODULE__{common_name: cn}, locale) when is_atom(locale),
+    do: Map.get(cn, locale)
+
+  def common_name(m, locale) when is_binary(locale),
+    do: common_name(m, String.to_atom(locale))
 end
