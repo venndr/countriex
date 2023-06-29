@@ -1,11 +1,20 @@
 defmodule Mix.Tasks.Countriex.GenerateData do
   alias Countriex.{Country, Geo, State}
 
+  use Memoize
+
   @countries_json_url "https://raw.githubusercontent.com/hexorx/countries/master/lib/countries/cache/countries.json"
   @states_json_url "https://raw.githubusercontent.com/hexorx/countries/master/lib/countries/data/subdivisions/"
-  @country_keys Country.__struct__() |> Map.keys()
+  @countries_translations_url "https://raw.githubusercontent.com/countries/countries/master/lib/countries/data/translations/"
+  @country_keys Map.keys(Country.__struct__())
+  @countries_cache "cache/countries.json"
+  @translation_locales ~w[en]
 
   def run(_) do
+    HTTPoison.start()
+    Application.ensure_all_started(:memoize)
+    Application.ensure_all_started(:yaml_elixir)
+
     countries =
       countries_from_url()
       |> tap(&update_cache/1)
@@ -20,56 +29,83 @@ defmodule Mix.Tasks.Countriex.GenerateData do
     |> write_to_file
   end
 
-  @countries_cache "cache/countries.json"
   defp update_cache(countries), do: File.write!(@countries_cache, countries)
 
-  defp countries_from_url do
-    HTTPoison.start()
+  defp countries_from_url,
+    do:
+      @countries_json_url
+      |> HTTPoison.get!()
+      |> Map.get(:body)
 
-    @countries_json_url
+  defmemop fetch_translation(url), permanent: true do
+    url
     |> HTTPoison.get!()
     |> Map.get(:body)
+    |> YamlElixir.read_from_string!()
   end
 
-  defp parse_countries_json(countries) do
-    countries
-    |> Poison.decode!(keys: :atoms)
-    |> Enum.map(fn {_, %{iso_short_name: name} = country} ->
-      country
-      |> Map.take(@country_keys)
-      |> Map.put(:name, name)
-      |> Map.put(:__struct__, Country)
-      |> struct()
-    end)
-  end
+  defp common_name(country_code, locale),
+    do:
+      (@countries_translations_url <> "countries-#{locale}.yaml")
+      |> fetch_translation()
+      |> string_to_atom()
+      |> Map.get(country_code)
 
-  defp states_from_url(countries) do
-    Application.ensure_all_started(:yaml_elixir)
+  defp include_common_name(country, country_code, locales),
+    do:
+      Enum.reduce(locales, country, fn locale, country ->
+        country_code
+        |> common_name(locale)
+        |> then(fn
+          nil ->
+            country
 
-    Enum.flat_map(countries, fn country ->
-      response = HTTPoison.get!(@states_json_url <> "#{country.alpha2}.yaml")
+          common_name ->
+            Map.update(
+              country,
+              :common_name,
+              %{String.to_atom(locale) => common_name},
+              fn names -> Map.put(names, String.to_atom(locale), common_name) end
+            )
+        end)
+      end)
 
-      case response.status_code do
-        200 ->
-          response
-          |> Map.get(:body)
-          |> YamlElixir.read_from_string()
-          |> assign_state_code
-          |> string_to_atom
-          |> Enum.filter(&Map.has_key?(&1, :name))
-          |> parse(%State{})
-          |> Enum.map(&Map.merge(&1, %{country_alpha3: country.alpha3}))
+  defp parse_countries_json(countries),
+    do:
+      countries
+      |> Poison.decode!(keys: :atoms)
+      |> Enum.map(fn {country_code, %{iso_short_name: name} = country} ->
+        country
+        |> Map.take(@country_keys)
+        |> Map.put(:name, name)
+        |> include_common_name(country_code, @translation_locales)
+        |> Map.put(:__struct__, Country)
+        |> struct()
+      end)
 
-        404 ->
-          []
-      end
-    end)
-  end
+  defp states_from_url(countries),
+    do:
+      Enum.flat_map(countries, fn country ->
+        response = HTTPoison.get!(@states_json_url <> "#{country.alpha2}.yaml")
 
-  defp assign_state_code(data) do
-    {:ok, data} = data
-    for {state_code, value} <- data, do: Map.merge(value, %{code: state_code})
-  end
+        case response.status_code do
+          200 ->
+            response
+            |> Map.get(:body)
+            |> YamlElixir.read_from_string!()
+            |> assign_state_code
+            |> string_to_atom
+            |> Enum.filter(&Map.has_key?(&1, :name))
+            |> parse(%State{})
+            |> Enum.map(&Map.merge(&1, %{country_alpha3: country.alpha3}))
+
+          404 ->
+            []
+        end
+      end)
+
+  defp assign_state_code(data),
+    do: for({state_code, value} <- data, do: Map.merge(value, %{code: state_code}))
 
   defp string_to_atom(data) when is_list(data), do: Enum.map(data, &string_to_atom(&1))
 
