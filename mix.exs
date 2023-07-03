@@ -3,21 +3,22 @@ defmodule Countriex.Mixfile do
 
   def project do
     [
+      aliases: aliases(),
       app: :countriex,
-      version: "1.0.2",
-      name: "Countriex",
+      build_embedded: Mix.env() == :prod,
+      deps: deps(),
       description:
         "All sorts of useful information about every country. A pure elixir port of the ruby Countries gem",
-      elixir: "~> 1.3",
-      source_url: "https://github.com/navinpeiris/countriex",
-      homepage_url: "https://github.com/navinpeiris/countriex",
-      package: package(),
-      elixirc_paths: elixirc_paths(Mix.env()),
-      build_embedded: Mix.env() == :prod,
-      start_permanent: Mix.env() == :prod,
-      deps: deps(),
       docs: [extras: ["README.md"]],
-      aliases: aliases()
+      elixir: "~> 1.3",
+      elixirc_paths: elixirc_paths(Mix.env()),
+      homepage_url: "https://github.com/navinpeiris/countriex",
+      name: "Countriex",
+      package: package(),
+      source_url: "https://github.com/navinpeiris/countriex",
+      start_permanent: Mix.env() == :prod,
+      version: "1.0.2",
+      xref: [exclude: [YamlElixir]]
     ]
   end
 
@@ -50,8 +51,9 @@ defmodule Countriex.Mixfile do
       {:earmark, "~> 1.0", only: :dev},
       {:ex_doc, "~> 0.14", only: :dev},
       {:httpoison, "~> 1.8", only: :dev},
+      {:memoize, "~> 1.4", only: :dev},
       {:poison, "~> 3.0", only: :dev},
-      {:yaml_elixir, "~> 1.1", only: :dev},
+      {:yaml_elixir, "~> 2.9.0", only: :dev},
       {:morphix, "~> 0.8.0"},
       {:ex_unit_notifier, "~> 0.1", only: :test}
     ]
