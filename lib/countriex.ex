@@ -29,7 +29,12 @@ defmodule Countriex do
 
       iex> Countriex.get_by(:foo, "XX")
       nil
+
+      iex> Countriex.get_by(:beep_boop, nil)
+      nil
   """
+  def get_by(_, nil), do: nil
+
   def get_by(field, value),
     do: all() |> Enum.find(fn country -> matches?(country, field, value) end)
 
