@@ -142,8 +142,8 @@ defmodule Mix.Tasks.Countriex.GenerateData do
 
   defp parse_geo(geo_data, %State{}),
     do: %Geo{
-      latitude: geo_data.latitude |> to_float,
-      longitude: geo_data.longitude |> to_float,
+      latitude: Map.get(geo_data, :latitude) |> to_float,
+      longitude: Map.get(geo_data, :longitude)|> to_float,
       max_latitude: geo_data |> Map.get(:max_latitude) |> to_float,
       max_longitude: geo_data |> Map.get(:max_longitude) |> to_float,
       min_latitude: geo_data |> Map.get(:min_latitude) |> to_float,
