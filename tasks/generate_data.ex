@@ -8,7 +8,7 @@ defmodule Mix.Tasks.Countriex.GenerateData do
   @countries_translations_url "https://raw.githubusercontent.com/countries/countries/master/lib/countries/data/translations/"
   @country_keys Map.keys(Country.__struct__())
   @countries_cache "cache/countries.json"
-  @translation_locales ~w[en]
+  @translation_locales ~w[en ar bg ca cy da de es fi fr hi hr hu it ja ko nb nl pl pt ru sv tr zh]
 
   def run(_) do
     HTTPoison.start()
