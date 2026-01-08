@@ -105,7 +105,11 @@ defmodule Countriex.Country do
   @doc """
   Returns the country's common name for the locale or nil
   """
-  @spec common_name(__MODULE__.t(), locale :: atom() | String.t()) :: String.t() | nil
+  @spec common_name(
+          __MODULE__.t(),
+          locale_or_locales :: atom() | String.t() | list(atom() | String.t())
+        ) ::
+          String.t() | nil
 
   def common_name(country, locale \\ @default_locale)
 
@@ -116,4 +120,7 @@ defmodule Countriex.Country do
 
   def common_name(m, locale) when is_binary(locale),
     do: common_name(m, String.to_atom(locale))
+
+  def common_name(m, locales) when is_list(locales),
+    do: Enum.find_value(locales, fn locale -> common_name(m, locale) end)
 end
