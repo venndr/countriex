@@ -17,6 +17,7 @@ defmodule Countriex.Country do
           currency_code: String.t(),
           eea_member: optional_boolean,
           eu_member: optional_boolean,
+          euvat_member: optional_boolean,
           gec: String.t(),
           geo: Countriex.Geo.t(),
           international_prefix: String.t(),
@@ -84,6 +85,7 @@ defmodule Countriex.Country do
     :alt_currency,
     :eea_member,
     :eu_member,
+    :euvat_member,
     :world_region
   ]
 

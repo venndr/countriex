@@ -77,6 +77,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -157,6 +158,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -231,6 +233,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -303,6 +306,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -371,6 +375,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -444,6 +449,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -516,6 +522,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -584,6 +591,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -655,6 +663,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -730,6 +739,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -804,6 +814,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -888,6 +899,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -965,6 +977,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -1033,6 +1046,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -1103,6 +1117,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: true,
+    euvat_member: false,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1178,6 +1193,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1255,6 +1271,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1324,6 +1341,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -1393,6 +1411,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -1476,6 +1495,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1546,6 +1566,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1625,6 +1646,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1696,6 +1718,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1766,6 +1789,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1835,6 +1859,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -1904,6 +1929,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -1974,6 +2000,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -2042,6 +2069,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -2116,6 +2144,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -2188,6 +2217,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -2267,6 +2297,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -2336,6 +2367,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -2407,6 +2439,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -2477,6 +2510,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -2547,6 +2581,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -2622,6 +2657,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -2693,6 +2729,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -2765,6 +2802,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -2835,6 +2873,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -2918,6 +2957,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -2992,6 +3032,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -3066,6 +3107,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -3151,6 +3193,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -3224,6 +3267,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -3296,6 +3340,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -3371,6 +3416,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -3445,6 +3491,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -3518,6 +3565,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -3589,6 +3637,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -3657,6 +3706,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -3726,6 +3776,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -3798,6 +3849,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -3866,6 +3918,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -3940,6 +3993,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -4021,6 +4075,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4100,6 +4155,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4185,6 +4241,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4257,6 +4314,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4334,6 +4392,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4402,6 +4461,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -4474,6 +4534,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -4547,6 +4608,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4617,6 +4679,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -4694,6 +4757,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4767,6 +4831,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4841,6 +4906,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -4915,6 +4981,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5000,6 +5067,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5072,6 +5140,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5151,6 +5220,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5226,6 +5296,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -5299,6 +5370,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -5370,6 +5442,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -5442,6 +5515,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5521,6 +5595,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5593,6 +5668,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5682,6 +5758,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: false,
     eu_member: false,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5750,6 +5827,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -5821,6 +5899,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -5892,6 +5971,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: true,
+    euvat_member: false,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -5966,6 +6046,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6037,6 +6118,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6105,6 +6187,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6176,6 +6259,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6245,6 +6329,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6317,6 +6402,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6386,6 +6472,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: true,
+    euvat_member: false,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -6460,6 +6547,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6538,6 +6626,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6609,6 +6698,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -6677,6 +6767,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -6749,6 +6840,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -6820,6 +6912,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -6889,6 +6982,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -6960,6 +7054,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -7031,6 +7126,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -7100,6 +7196,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -7179,6 +7276,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -7250,6 +7348,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -7329,6 +7428,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -7403,6 +7503,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -7483,6 +7584,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -7561,6 +7663,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -7634,6 +7737,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -7706,6 +7810,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -7776,6 +7881,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -7848,6 +7954,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -7919,6 +8026,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -7998,6 +8106,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -8076,6 +8185,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -8146,6 +8256,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -8216,6 +8327,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -8290,6 +8402,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -8361,6 +8474,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -8432,6 +8546,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -8507,6 +8622,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -8579,6 +8695,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -8647,6 +8764,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -8720,6 +8838,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -8794,6 +8913,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -8871,6 +8991,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -8946,6 +9067,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -9017,6 +9139,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9089,6 +9212,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -9162,6 +9286,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9231,6 +9356,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -9305,6 +9431,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9377,6 +9504,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -9445,6 +9573,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: nil,
+    euvat_member: false,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9515,6 +9644,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -9585,6 +9715,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9655,6 +9786,7 @@ defmodule Countriex.Data do
     alt_currency: "ZAR",
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9735,6 +9867,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9815,6 +9948,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9892,6 +10026,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -9967,6 +10102,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10039,6 +10175,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10109,6 +10246,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: false,
+    euvat_member: true,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10183,6 +10321,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10258,6 +10397,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10331,6 +10471,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: true,
+    euvat_member: false,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -10403,6 +10544,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10477,6 +10619,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -10553,6 +10696,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10621,6 +10765,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -10691,6 +10836,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -10765,6 +10911,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -10836,6 +10983,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -10910,6 +11058,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -10979,6 +11128,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: true,
+    euvat_member: false,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -11053,6 +11203,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11121,6 +11272,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11198,6 +11350,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11268,6 +11421,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11339,6 +11493,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -11409,6 +11564,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11487,6 +11643,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -11561,6 +11718,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -11631,6 +11789,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11704,6 +11863,7 @@ defmodule Countriex.Data do
     alt_currency: "ZAR",
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11776,6 +11936,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -11845,6 +12006,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -11917,6 +12079,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -11993,6 +12156,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -12061,6 +12225,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -12141,6 +12306,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -12220,6 +12386,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -12295,6 +12462,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -12365,6 +12533,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -12433,6 +12602,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -12511,6 +12681,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -12581,6 +12752,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -12650,6 +12822,7 @@ defmodule Countriex.Data do
     alt_currency: "USD",
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -12721,6 +12894,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -12793,6 +12967,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -12865,6 +13040,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -12945,6 +13121,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -13017,6 +13194,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -13094,6 +13272,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -13166,6 +13345,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -13236,6 +13416,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -13306,6 +13487,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -13387,6 +13569,7 @@ defmodule Countriex.Data do
     alt_currency: "EGP",
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -13461,6 +13644,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -13529,6 +13713,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -13599,6 +13784,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -13669,6 +13855,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -13739,6 +13926,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: true,
+    euvat_member: false,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -13816,6 +14004,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -13887,6 +14076,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -13962,6 +14152,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14036,6 +14227,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14116,6 +14308,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14188,6 +14381,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -14259,6 +14453,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14333,6 +14528,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14411,6 +14607,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14486,6 +14683,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -14559,6 +14757,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -14636,6 +14835,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14708,6 +14908,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14785,6 +14986,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: true,
     eu_member: true,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14853,6 +15055,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14925,6 +15128,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -14994,6 +15198,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15067,6 +15272,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15136,6 +15342,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -15208,6 +15415,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15281,6 +15489,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15350,6 +15559,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -15420,6 +15630,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -15495,6 +15706,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15567,6 +15779,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15640,6 +15853,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -15714,6 +15928,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15787,6 +16002,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15855,6 +16071,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -15932,6 +16149,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -16006,6 +16224,7 @@ defmodule Countriex.Data do
     alt_currency: "RUB",
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -16076,6 +16295,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -16148,6 +16368,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -16220,6 +16441,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -16295,6 +16517,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -16367,6 +16590,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -16439,6 +16663,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -16511,6 +16736,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -16579,6 +16805,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -16652,6 +16879,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -16725,6 +16953,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -16804,6 +17033,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -16875,6 +17105,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -16947,6 +17178,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -17022,6 +17254,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -17091,6 +17324,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -17164,6 +17398,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -17240,6 +17475,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -17314,6 +17550,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -17382,6 +17619,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -17455,6 +17693,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -17530,6 +17769,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "AMER"
   },
   %Countriex.Country{
@@ -17602,6 +17842,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -17676,6 +17917,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -17748,6 +17990,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -17819,6 +18062,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "APAC"
   },
   %Countriex.Country{
@@ -17892,6 +18136,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -17960,6 +18205,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: true,
+    euvat_member: false,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -18050,6 +18296,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -18120,6 +18367,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   },
   %Countriex.Country{
@@ -18197,6 +18445,7 @@ defmodule Countriex.Data do
     alt_currency: nil,
     eea_member: nil,
     eu_member: nil,
+    euvat_member: nil,
     world_region: "EMEA"
   }
 ]
