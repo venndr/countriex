@@ -16604,7 +16604,7 @@ defmodule Countriex.Data do
       cy: "Twrci",
       da: "Tyrkiet",
       de: "Türkei",
-      en: "Türkiye",
+      en: "Turkey",
       es: "Turquía",
       fi: "Turkki",
       fr: "Turquie",
@@ -56669,7 +56669,8 @@ defmodule Countriex.Data do
       zh: "西北地区"
     },
     type: "territory",
-    unofficial_names: ["Territoires du Nord-Ouest"]
+    unofficial_names: ["NWT",
+     "Territoires du Nord-Ouest"]
   },
   %{
     __struct__: Countriex.State,
@@ -56948,7 +56949,8 @@ defmodule Countriex.Data do
       zh: "愛德華王子島"
     },
     type: "province",
-    unofficial_names: ["Île-du-Prince-Édouard"]
+    unofficial_names: ["PEI",
+     "Île-du-Prince-Édouard"]
   },
   %{
     __struct__: Countriex.State,
@@ -57047,7 +57049,8 @@ defmodule Countriex.Data do
       zh: "魁北克"
     },
     type: "province",
-    unofficial_names: ["Québec"]
+    unofficial_names: ["PQ",
+     "Québec"]
   },
   %{
     __struct__: Countriex.State,
@@ -150071,7 +150074,7 @@ defmodule Countriex.Data do
       min_latitude: 11.8994375,
       min_longitude: 79.7857511
     },
-    name: "Pondicherry",
+    name: "Puducherry",
     translations: %{
       ar: "بودوتشيري",
       as: "পুডুছেৰী",
@@ -151054,7 +151057,7 @@ defmodule Countriex.Data do
       min_latitude: nil,
       min_longitude: nil
     },
-    name: "तेलंगाना",
+    name: "Telangana",
     translations: %{
       ar: "تيلانغانا",
       as: "তেলেংগানা",
@@ -151331,7 +151334,7 @@ defmodule Countriex.Data do
       min_latitude: nil,
       min_longitude: nil
     },
-    name: "उत्तराखण्ड",
+    name: "Uttarakhand",
     translations: %{
       am: "ኡተራኸንድ",
       ar: "أوتاراخند",
@@ -151806,7 +151809,7 @@ defmodule Countriex.Data do
       min_latitude: nil,
       min_longitude: nil
     },
-    name: "Dādra and Nagar Haveli and Damān and Diu",
+    name: "Dadra and Nagar Haveli and Daman and Diu",
     translations: %{
       ar: "دادرا وناغار هافيلي ودامان وديو",
       as: "দাদৰা আৰু নগৰ হাভেলী আৰু দমন আৰু দিউ",
@@ -151815,7 +151818,7 @@ defmodule Countriex.Data do
       ca: "Dadra i Nagar Haveli i Daman i Diu",
       cs: "Dádra a Nagar Havélí a Daman a Díu",
       de: "Dadra und Nagar Haveli und Daman und Diu",
-      en: "Dādra and Nagar Haveli and Damān and Diu",
+      en: "Dadra and Nagar Haveli and Daman and Diu",
       es: "Dadra y Nagar Haveli y Damán y Diu",
       fa: "دادرا و نگر حویلی و دامان و دیو",
       fi: "Dadra ja Nagar Haveli ja Daman ja Diu",
